@@ -1,0 +1,15 @@
+$responsive: 600px;
+
+$primary-font: "open sans", sans-serif;
+
+$colours: (
+    text: #262626,
+    offwhite: #F4F3EE,
+    accent: #C32C72,
+    white: #FFFFFF,
+    grey: #E5E5E4,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}
